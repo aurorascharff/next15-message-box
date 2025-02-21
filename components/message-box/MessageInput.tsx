@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useActionState, useEffect, useRef, useState, useTransition } from 'react';
+import React, { startTransition, useActionState, useEffect, useRef, useState } from 'react';
 import toast from 'react-hot-toast';
 import { v4 as uuidv4 } from 'uuid';
 import { submitMessage } from '@/data/actions/submitMessage';
@@ -19,7 +19,6 @@ export default function MessageInput({ addOptimisticMessage, userId }: Props) {
 
   const [defaultValue, setDefaultValue] = useState(state.content);
   const formRef = useRef<HTMLFormElement>(null);
-  const [, startTransition] = useTransition();
 
   useEffect(() => {
     if (state.error) {
