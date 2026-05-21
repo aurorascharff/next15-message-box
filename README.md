@@ -11,13 +11,13 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 First, install the dependencies:
 
 ```bash
-npm install
+pnpm install
 ```
 
 Then, run the development server:
 
 ```bash
-npm run dev
+pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
@@ -33,19 +33,19 @@ After switching, delete the `prisma/migrations` folder before running the migrat
 When using sqlserver, you need to migrate the database schema with:
 
 ```bash
-npm run prisma.migrate
+pnpm prisma.migrate
 ```
 
-When using sqllite, initialize with:
+When using sqlite, initialize with:
 
 ```bash
-npm run prisma.push
+pnpm prisma.push
 ```
 
 Seed prisma/seed.ts for initial data:
 
 ```sh
-npm run prisma.seed
+pnpm prisma.seed
 ```
 
 ## Learn More
